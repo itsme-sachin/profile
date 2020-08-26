@@ -1,0 +1,71 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:#0C0C0D;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+
+.scrolldown{
+    position: absolute;
+    /* bottom: 20px; */
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    /* background: #fff; */
+    transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
+.scrolldown span{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+}
+.scrolldown span:nth-child(1){
+    transform: translate(-15px,-15px);
+    animation-delay:-0.4s;
+}
+.scrolldown span:nth-child(2){
+    transform: translate(0px,0px);
+    animation-delay:-0.2s;
+}
+.scrolldown span:nth-child(3){
+    transform: translate(15px,15px);
+    animation-delay:0s;
+}
+@keyframes animate{
+    0%{
+        top: -5px;
+        left: -5px;
+        opacity: 0;
+    }
+    25%{
+        top: 0px;
+        left: 0px;
+        opacity:1;
+    }
+    50%,100%{
+        top: 5px;
+        left: 5px;
+        opacity: 0;
+    }
+}
+
+
+#banner{
+    opacity: 0.5;
+    
+}
+#type{
+    color: rgb(240, 46, 46);
+}
