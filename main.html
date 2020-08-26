@@ -240,14 +240,44 @@
 
         <!-- Buttons -->
         <div class="text-center">
-          <a href="Rules.html" class="btn btn-primary shadow lift mr-1">
-            Click 
-          </a>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+            Click
+          </button>
         </div>
 
       </div>
     </div>
 
+    <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">A JavaScript Based Game (Rules)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="lead text-primary">
+          Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":
+           <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+           <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+           <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
+           <br> Recommended: Use Laptop Or Destop. <br>
+           Caution: Play on landscape Mode on Mobile.
+          </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary"> <a href="https://itsme-sachin.github.io/dicegame/"> <span style="color: #fff; text-decoration: none;">Start</span> </a> </button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+    
     <!-- Master Chef -->
     <hr>
     <div class="row justify-content-center text-center align-items-center" data-aos="fade-up">
