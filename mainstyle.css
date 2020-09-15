@@ -111,22 +111,10 @@ hr{
     border-radius: 10px;
     z-index: 1;
 }
- #chef{
-     overflow: hidden;
- } 
- #chef img{
-     
-    max-width: 100%;
-     transition: all ease 1s;
- }
-#chef:hover>img{
-    cursor: pointer;
-    transform: scale(1.5);
-    
-}
- .description{
-     color: coral;
-     font-family: 'Pacifico', cursive;
+ 
+
+ #carouselExampleIndicators{
+    margin-top: 70px;
  }
 
 #portfolio{
@@ -136,7 +124,7 @@ margin-bottom: 100px;
 
 }
 #contact{
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 70px;
 }
 #icon{
